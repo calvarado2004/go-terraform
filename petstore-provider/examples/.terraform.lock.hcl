@@ -5,6 +5,6 @@ provider "example.com/gofordevops/petstore" {
   version     = "0.1.0"
   constraints = "0.1.0"
   hashes = [
-    "h1:Xs9Ds/qHCu9AfpGgYq7uNWXEb5gqWHr61kkw4mRlO0g=",
+    "h1:NM3lJPTB+ibLf+bl6I8Lcsn+mROl1ICJ51om2ztYGQ8=",
   ]
 }

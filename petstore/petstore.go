@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"flag"
-	"github.com/calvarado2004/go-terraform/petstore/internal/server/storage"
+	"github.com/calvarado2004/go-terraform/petstore/internal/server/storage/mem"
 	stdlog "log"
 	"os"
 	"strconv"
@@ -159,7 +159,7 @@ func main() {
 
 	// Setup for the service.
 
-	var store storage.Data
+	store := mem.New()
 
 	s, err := server.New(*addr, store, server.WithGRPCOpts(
 		//grpc.UnaryInterceptor(grpcotel.UnaryServerInterceptor(tracing.Tracer)),
